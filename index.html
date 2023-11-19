@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" type="text/css" href="trev.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="fancyFont" style="padding: 30px;
+    margin: 20px auto; background-color: cornsilk;">
+        <p>Here is the home of the Miami Dolphins appreciation society. 
+        The winningest team in NFL history. </p>
+    </div>
+    <ul class="nav">
+        <li><a class="active" href="">HOME</a></li>
+        <li><a href="">GAMES</a></li>
+        <li><a href="">HISTORY</li></a></li>
+        <li style="float: right;">
+            <a href="">MEDIA</li></a>
+    </li>
+    </ul>
+    
+    <div class="dropdown" style="background-color: aqua;">
+    <span class="coraltext">Hello, World!</span>
+    <div class="dropdown-content">
+        <p>Its'a  me.....</p>
+    </div>
+    </div>
+    <h2 class="centretext shadowText sofiaText">
+        Well, lets have a look at this...
+    </h2>
+    <h5 style="text-transform: capitalize;">this is h5 text</h5>
+    
+    <h2 style="text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                text-shadow: 0px 0px 8px coral;
+                " >
+        How are you my friend
+    </h3> 
+
+    <div class="container">
+        <div class="item item-1">Miami</div>
+        <div class="item item-img">Dolphins
+            <a href="Miami-Dolphins-logo.png">
+                <img width="100%" src="Miami-Dolphins-logo.png">
+            </a href="Miami-Dolphins-logo.png">
+        </div>
+        <div class="item item-3">Number 1</div> 
+    </div>
+    <br>
+    <div class="container">
+        <div class="item item-1">Matthew</div>
+        <div class="item item-2">Abigail</div>
+        <div class="item item-3">Christopher</div> 
+    </div>
+    <div id="scorebox" class="container">
+        <p id="score">Miami @ Kansas City</p>
+        <button id="showscore" type="button" onclick="gameScore()">score</button>
+    
+    </div>
+    <br>
+
+    
+    <div class="codePlayground">
+        <h1 class="centretext" style="text-transform: uppercase;">Code Playground</h1>
+        <p>
+            Try some practice Code here!
+        </p>
+        
+    </div>
+    <div class="relativeContainer">
+        <img class="imgAbs" src="pricDrop.png" alt="" width="10%" style="opacity: 0.7;">
+        <img style="display: block; margin: auto;" 
+        src="stock-vector-abstract-bright-graffiti-pattern-with-bricks-paint-drips-words-in-graffiti-style-graphic-urban-1781991155.jpg" 
+            width="100%">
+            <img src="pricDrop.png" width="25%" 
+            style="position: absolute; bottom: 1.5%; left: 2%;"
+            id="inset">
+    </div>
+
+
+    <script>
+        function gameScore(){
+            document.getElementById("score").innerHTML=('Miami 34 @ 17 Kansas City');
+            document.getElementById('showscore').innerHTML=('Hide Score')
+        }
+        let x = 5;
+        const y = 3;
+        let z = x + y;
+        document.getElementById('demo').innerHTML= z
+    </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 243, 223);
+    background-image: url(crossHatch.png);
+    background-size: 300px;
+    display: block;
+    border: 20px solid rgb(66, 66, 66);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 100%;
+
+}
+
+p {
+    display: block;
+}
+
+h5 {
+    text-align: center;
+}
+
+body.h9 {
+    text-align: center;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        background-color: aquamarine;
+    }
+
+    ul.nav li {
+        float: none;
+        width: 100%;
+    }
+
+    ul.nav li:last-child {
+        float: none;
+    }
+
+    ul.nav li a {
+        text-align: center;
+    }
+}
+
+ul.nav {
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    overflow: hidden;
+    z-index: 2;
+}
+
+ul.nav li {
+    float: left;
+    border-right: 1px solid coral;
+}
+
+ul.nav li:last-child {
+    border-right: none;
+    border-left: 1px solid #444;
+}
+
+li a {
+    display: block;
+    color: aliceblue;
+    background-color: #202020;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+    background-color: coral;
+}
+
+.active {
+    background-color: aqua;
+}
+
+.dropdown {
+    position: relative;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.dropdown-content {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgba(45, 67, 78, 0.934);
+    width: 160px;
+    height: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    padding: 12px 16px;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: .9s ease-in;
+
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    height: 140%;
+    pointer-events: all;
+
+}
+
+
+.centretext {
+    text-align: center;
+}
+
+.coraltext {
+    color: coral;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.strikethroughAqua {
+    text-decoration: line-through aqua;
+    text-decoration-thickness: 8%;
+}
+
+.container {
+    width: 70%;
+    height: auto;
+    margin: 5px auto;
+    border: 10px solid aquamarine;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.item {
+    width: 80px;
+    height: 80px;
+    background-color: coral;
+    padding: 1em;
+    font-weight: 700;
+    color: aliceblue;
+    text-align: center;
+    border: 10px solid crimson;
+    border-radius: 10px;
+}
+
+.container#scorebox {
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.item-1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item-2 {
+    flex-grow: 1;
+    background-color: aqua;
+}
+
+.item-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-img {
+    flex-grow: 1;
+    background-color: aqua;
+    height: fit-content;
+}
+
+.item-img img {
+    transition: scale 1s;
+}
+
+.item-img img:hover {
+    scale: 2;
+
+}
+
+.shadowText {
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.sofiaText {
+    font-family: "Sofia", sans-serif;
+}
+
+button {
+    display: block;
+}
+
+#demo {
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#fancyFont {
+    font-family: fantasy;
+}
+
+#scorebox {
+    background-color: rgba(138, 214, 214, 1);
+    box-shadow: 0px 4px 8px 2px #444444bb;
+    margin: 30px auto;
+}
+
+.codePlayground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    margin: 5px auto;
+    border: 10px solid aquamarine;
+    padding: 10px;
+    background-color: #444;
+    color: aqua;
+    font-family: 'Monospace ,Courier New', Courier;
+    font-size: .75em;
+    overflow: hidden;
+}
+
+.relativeContainer {
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px rgb(33, 33, 33);
+}
+
+.imgAbs {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+#inset {
+    border: #fefefe 2px solid;
+    border-style: inset;
+}
